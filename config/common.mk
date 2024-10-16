@@ -106,6 +106,9 @@ PRODUCT_PACKAGES += \
     curl \
     getcap
 
+PRODUCT_PACKAGES += \
+    nano_recovery
+
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/bin/curl \
     system/bin/getcap
