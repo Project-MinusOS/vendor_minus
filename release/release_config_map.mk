@@ -4,6 +4,6 @@ default_containers: "system_ext"
 default_containers: "vendor"
 
 release_config {
-    name: "ap3a"
-    flag_value_files: "build_config/ap3a.textproto"
+    name: "ap4a"
+    flag_value_files: "build_config/ap4a.textproto"
 }
