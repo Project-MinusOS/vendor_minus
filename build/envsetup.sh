@@ -58,12 +58,12 @@ function check_product()
         echo "Couldn't locate the top of the tree. Try setting TOP." >&2
         return
     fi
-    if (echo -n $1 | grep -q -e "^lineage_") ; then
-        LINEAGE_BUILD=$(echo -n $1 | sed -e 's/^lineage_//g')
+    if (echo -n $1 | grep -q -e "^minus_") ; then
+        MINUS_BUILD=$(echo -n $1 | sed -e 's/^minus_//g')
     else
-        LINEAGE_BUILD=
+        MINUS_BUILD=
     fi
-    export LINEAGE_BUILD
+    export MINUS_BUILD
 
         TARGET_PRODUCT=$1 \
         TARGET_RELEASE=$2 \
