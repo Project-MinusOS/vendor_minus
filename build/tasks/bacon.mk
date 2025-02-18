@@ -16,7 +16,7 @@
 # -----------------------------------------------------------------
 # Minus OTA update package
 
-MINUS_TARGET_PACKAGE := $(PRODUCT_OUT)/MinusOS-$(MINUS_VERSION).zip
+MINUS_TARGET_PACKAGE := $(PRODUCT_OUT)/$(MINUS_VERSION).zip
 
 SHA256 := prebuilts/build-tools/path/$(HOST_PREBUILT_TAG)/sha256sum
 
