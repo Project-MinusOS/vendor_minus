@@ -53,11 +53,11 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 endif
 endif
 
-# Lineage-specific broadcast actions whitelist
+# Minus-specific broadcast actions whitelist
 PRODUCT_COPY_FILES += \
     vendor/minus/config/permissions/minus-sysconfig.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/minus-sysconfig.xml
 
-# Lineage-specific init rc file
+# Minus-specific init rc file
 PRODUCT_COPY_FILES += \
     vendor/minus/prebuilt/common/etc/init/init.minus-system_ext.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.minus-system_ext.rc
 
@@ -191,3 +191,4 @@ include vendor/minus/config/version.mk
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 
+include vendor/minus/audio/audio.mk
