@@ -15,6 +15,10 @@ PRODUCT_PACKAGES += \
     Recorder \
     Seedvault \
     ViaBrowser
+    
+# LatinIME
+PRODUCT_PACKAGES += \
+    LatinIME
 
 # Extra cmdline tools
 PRODUCT_PACKAGES += \
