@@ -26,3 +26,7 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
 PRODUCT_PACKAGES += \
     ThemePicker \
     ThemesStub
+
+# WallpaperPicker
+PRODUCT_PACKAGES += \
+    WallpaperPicker2
