@@ -171,4 +171,8 @@
 
     <!-- Name of the font family to use in the default lockscreen clock -->
     <string name="config_clockFontFamily" translatable="false" />
+
+    <!-- Name of the font family to use in the default lockscreen clock -->
+    <string name="config_bodyFontFamily">harmonyos-sans</string>
+    <string name="config_bodyFontFamilyMedium">harmonyos-sans-medium</string>
 </resources>
