@@ -10,7 +10,8 @@ $(call inherit-product-if-exists, external/google-fonts/rubik/fonts.mk)
 # Apps
 PRODUCT_PACKAGES += \
     Camelot \
-    ViaBrowser
+    ViaBrowser \
+    Gboard
     
 # Extra cmdline tools
 PRODUCT_PACKAGES += \
