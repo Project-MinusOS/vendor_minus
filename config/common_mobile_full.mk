@@ -14,8 +14,9 @@ PRODUCT_PACKAGES += \
     Profiles \
     Recorder \
     Seedvault \
-    ViaBrowser
-    
+    ViaBrowser \
+    Gboard
+
 # LatinIME
 PRODUCT_PACKAGES += \
     LatinIME
