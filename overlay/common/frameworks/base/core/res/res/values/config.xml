@@ -175,4 +175,9 @@
     <!-- Name of the font family to use in the default lockscreen clock -->
     <string name="config_bodyFontFamily">harmonyos-sans</string>
     <string name="config_bodyFontFamilyMedium">harmonyos-sans-medium</string>
+ 
+    <!-- Name of a font family to use for headlines. If empty, falls back to platform default -->
+    <string name="config_headlineFontFamily">harmonyos-sans</string>
+    <string name="config_headlineFontFamilyMedium">harmonyos-sans-medium</string>
+    <string name="config_headlineFontFeatureSettings">ss03</string>
 </resources>
