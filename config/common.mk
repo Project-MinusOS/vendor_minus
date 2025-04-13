@@ -139,6 +139,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/minus/prebuilt/common/etc/init/init.openssh.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/init.openssh.rc
 
+# Provision
+PRODUCT_PACKAGES += \
+    Provision
+    
 # rsync
 PRODUCT_PACKAGES += \
     rsync
@@ -172,7 +176,8 @@ endif
 
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/minus/overlay/no-rro
 PRODUCT_PACKAGE_OVERLAYS += \
-    vendor/minus/overlay/common
+    vendor/minus/overlay/common \
+    vendor/minus/overlay/no-rro
 
 PRODUCT_PACKAGES += \
     DocumentsUIOverlay \
