@@ -1,0 +1,6 @@
+runtime_resource_overlay {
+    name: "BlackTheme",
+
+    theme: "BlackTheme",
+    product_specific: true,
+}
