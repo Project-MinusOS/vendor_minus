@@ -127,7 +127,6 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/%/libntfs-3g.so
 
 # Icon packs
-PRODUCT_PACKAGES += \
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/minus/overlay/themes/IconOverlay
 
