@@ -4,6 +4,7 @@ android_app_import {
     presigned: true,
     product_specific: true,
     overrides: ["Jelly", "Browser2",],
+    preprocessed: true,
     dex_preopt: {
         enabled: false,
     },
