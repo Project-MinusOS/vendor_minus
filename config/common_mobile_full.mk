@@ -15,5 +15,7 @@ PRODUCT_PACKAGES += \
     
 # Extra cmdline tools
 PRODUCT_PACKAGES += \
-    unrar \
+    unrar
+
+PRODUCT_HOST_PACKAGES += \
     zstd
