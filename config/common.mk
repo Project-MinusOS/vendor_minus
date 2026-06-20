@@ -104,10 +104,6 @@ ifneq ($(TARGET_DISABLE_EPPE),true)
 $(call enforce-product-packages-exist-internal,$(wildcard device/*/$(MINUS_BUILD)/$(TARGET_PRODUCT).mk),product_manifest.xml rild Calendar android.hidl.memory@1.0-impl.vendor vndk_apex_snapshot_package)
 endif
 
-# Config
-PRODUCT_PACKAGES += \
-    SimpleSettingsConfig
-
 # Extra tools
 PRODUCT_PACKAGES += \
     curl \
@@ -220,4 +216,3 @@ include vendor/minus/config/version.mk
 -include vendor/minus-priv/keys/keys.mk
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
-
