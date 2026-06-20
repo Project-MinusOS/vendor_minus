@@ -46,9 +46,9 @@ minus_generator {
     dep_root: "$(TARGET_KERNEL_SOURCE)",
     dep_files: [
         "Makefile",
-        "include/**/*",
-        "arch/$(KERNEL_ARCH)/include/**/*",
-        "techpack/audio/include/**/*",
+        "include/**/*.h",
+        "arch/$(KERNEL_ARCH)/include/**/*.h",
+        "techpack/audio/include/**/*.h",
     ],
 }
 

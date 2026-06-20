@@ -145,14 +145,14 @@ func (g *Module) GenerateAndroidBuildActions(ctx android.ModuleContext) {
 
 	if len(g.properties.Tools) > 0 {
 		ctx.VisitDirectDepsProxyAllowDisabled(func(proxy android.ModuleProxy) {
-			module := android.PrebuiltGetPreferred(ctx, proxy)
+			module := proxy
 			switch ctx.OtherModuleDependencyTag(module) {
 			case hostToolDepTag:
 				tool := ctx.OtherModuleName(module)
 				var path android.OptionalPath
 
-				if t, ok := android.OtherModuleProvider(ctx, module, android.HostToolProviderInfoProvider); ok {
-					if !android.OtherModulePointerProviderOrDefault(ctx, module, android.CommonModuleInfoProvider).Enabled {
+				if t := android.GetHostToolInfo(ctx, module); t != nil {
+					if commInfo, ok := android.OtherModuleProvider(ctx, module, android.CommonModuleInfoProvider); ok && !commInfo.Enabled {
 						if ctx.Config().AllowMissingDependencies() {
 							ctx.AddMissingDependencies([]string{tool})
 						} else {
@@ -257,11 +257,8 @@ func (g *Module) GenerateAndroidBuildActions(ctx android.ModuleContext) {
 	// Dummy output dep
 	dummyDep := android.PathForModuleGen(ctx, ".dummy_dep")
 
-	genDir := android.PathForModuleGen(ctx)
-	manifestPath := android.PathForModuleOut(ctx, "generator.sbox.textproto")
-
-	// Use a RuleBuilder to create a rule that runs the command inside an sbox sandbox.
-	rule := android.NewRuleBuilder(pctx, ctx).Sbox(genDir, manifestPath).SandboxTools()
+	// Run command directly without sbox sandbox (kernel make needs full source tree).
+	rule := android.NewRuleBuilder(pctx, ctx)
 
 	rule.Command().
 		Text(rawCommand).
