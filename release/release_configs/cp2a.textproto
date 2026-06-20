@@ -1,0 +1,3 @@
+name: "cp2a"
+inherits: "bp3a"
+aconfig_value_sets: "aconfig_value_set-minus-cp2a"
