@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The MinusOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <array name="partner_wallpapers" translatable="false">
+        <item>cirno_01</item>
+        <item>cirno_02</item>
+    </array>
+</resources>

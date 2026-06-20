@@ -34,3 +34,7 @@ PRODUCT_PACKAGES += \
 # WallpaperPicker
 PRODUCT_PACKAGES += \
     WallpaperPicker2
+
+# Wallpapers
+PRODUCT_PACKAGES += \
+    MinusWallpapers
